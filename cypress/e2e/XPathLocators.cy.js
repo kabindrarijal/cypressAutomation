@@ -27,6 +27,6 @@ describe('XPath Locators', () => {
         cy.get(".oxd-topbar-header-title").contains("Dashboard") //Assertion
 
         //  Note: .get is only used for selecting CSS
-        cy.xpath("//ul[@class='oxd-main-menu']").xpath("./li").should('have.length', 11) //using XPath
+        cy.xpath("//ul[@class='oxd-main-menu']").xpath("./li").should('have.length', 11) //using Chanined XPath
     })
 })
