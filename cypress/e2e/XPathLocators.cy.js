@@ -16,7 +16,7 @@ describe('XPath Locators', () => {
         cy.xpath("//ul[@class='oxd-main-menu']/li").should('have.length', 11) //using XPath
     })
 
-    it('Chained xpath',()=>{
+    it('Chained xpath', () => {
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
         cy.get("[name='username']").type("Admin") //used attribute
